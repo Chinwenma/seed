@@ -39,13 +39,13 @@
                             </div>
                             <div class="dashboard-menu">
                                 <ul>
-                                    <li class="active"><a href="user-panel.html"><i class="ti-dashboard"></i>Dashboard</a></li>
-                                    <li><a href="user-deposit.html"><i class="ti-wallet"></i>Deposit Money</a></li>
-                                    <li><a href="user-withdraw.html"><i class="ti-import"></i>Withdraw Money</a></li>
-                                    <li><a href="user-invest.html"><i class="ti-new-window"></i>Total Investment</a></li>
-                                    <li><a href="user-transection.html"><i class="ti-layout-list-thumb"></i>Transection</a></li>
-                                    <li><a href="user-notifecations.html"><i class="ti-bell"></i>Notifecations</a></li>
-                                    <li><a href="user-info.html"><i class="ti-settings"></i>Settings</a></li>
+                                    <li class="active"><a href="./user-panel"><i class="ti-dashboard"></i>Dashboard</a></li>
+                                    <li><a href="./user-deposit"><i class="ti-wallet"></i>Deposit Money</a></li>
+                                    <li><a href="./user-withdraw"><i class="ti-import"></i>Withdraw Money</a></li>
+                                    <li><a href="./user-invest"><i class="ti-new-window"></i>Total Investment</a></li>
+                                    <li><a href="./user-transaction"><i class="ti-layout-list-thumb"></i>Transection</a></li>
+                                    <li><a href="./user-notifications"><i class="ti-bell"></i>Notifecations</a></li>
+                                    <li><a href="./user-info"><i class="ti-settings"></i>Settings</a></li>
                                     <li><a href="#"><i class="ti-shift-right"></i>Log out</a></li>
                                 </ul>
                             </div>
@@ -269,64 +269,3 @@
     </div>
 </main>
 <!-- Start Footer Area -->
-<footer class="footer1 dashboard-footer">
-    <!-- Start Footer Bottom Area -->
-    <div class="footer-area-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="copyright">
-                        <p>
-                            Copyright © 2021
-                            <a href="#">GOLDHYIP</a> All Rights Reserved
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="footer-menu">
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Terms & Condition</a></li>
-                            <li><a href="#">Privacy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Footer Bottom Area -->
-</footer>
-<!-- End Footer Area -->
-
-<!-- All JS here -->
-
-<!-- modernizr JS -->
-<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-<!-- jquery latest version -->
-<script src="js/vendor/jquery-1.12.4.min.js"></script>
-<!-- Poper js -->
-<script src="js/popper.min.js"></script>
-<!-- bootstrap js -->
-<script src="js/bootstrap.min.js"></script>
-<!-- owl.carousel js -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- meanmenu js -->
-<script src="js/jquery.meanmenu.js"></script>
-<!-- Counter js -->
-<script src="js/jquery.counterup.min.js"></script>
-<!-- waypoint js -->
-<script src="js/waypoints.js"></script>
-<!-- magnific js -->
-<script src="js/magnific.min.js"></script>
-<!-- wow js -->
-<script src="js/wow.min.js"></script>
-<!-- plugins js -->
-<script src="js/plugins.js"></script>
-<!-- main js -->
-<script src="js/main.js"></script>
-</body>
-
-
-<!-- Mirrored from rockstheme.com/rocks/live-goldhyip/user-panel.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Sep 2023 09:23:21 GMT -->
-
-</html>

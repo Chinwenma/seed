@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8">
+    <base href="<?= domain ?>">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?= $title?></title>
     <meta name="description" content="">

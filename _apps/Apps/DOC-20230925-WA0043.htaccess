@@ -14,7 +14,7 @@
 	</IfModule>
 
 	RewriteEngine On
-	RewriteBas /
+	RewriteBase /
 
 	# Handle Authorization Header
 	RewriteCond %{HTTP:Authorization} .
@@ -46,7 +46,7 @@
 # Manual editing of this file may result in unexpected behavior.
 # To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
 # For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
-<IfModule php8_module>
+<IfModule php7_module>
    php_flag display_startup_errors on
    php_flag display_errors On
    php_value max_execution_time 600

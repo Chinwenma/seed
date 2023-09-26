@@ -1,4 +1,6 @@
-
+<?php
+$User = $Core->GetUserInfo($this->storage('accid'));
+?>
     <main>
     <!-- Start Breadcrumb Area -->
         <div class="page-area bread-pd">
@@ -8,6 +10,7 @@
                     <div class="col-xl-12">
                         <div class="breadcrumb-title">
                             <h2>User Information </h2>
+                            <h3><?= $Self->Toast()?></h3>
                             <div class="bread-come">
                                 <nav aria-label="breadcrumb ">
                                     <ol class="breadcrumb purple lighten-4">
@@ -34,7 +37,7 @@
                                     <div class="dashboard-profile">
                                         <img src="<?= $assets ?>img/about/profile.png" alt="">
                                         <div class="profile-content">
-                                            <span class="pro-name">jhon Deo</span>
+                                            <span class="pro-name"><?= $User->name?></span>
                                             <span class="pro-number">jonedoe@gmail.com</span>
                                         </div>
                                     </div>
