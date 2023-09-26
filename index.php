@@ -6,7 +6,7 @@ require_once DOT . "/bootstrap.php";
 require_once DOT . "/_public/user.php";
 
 //Home page//
-$Route->add('/', function () {
+$Route->add('/seed/', function () {
     
     $Template = new Apps\Template;
     $Template->addheader("layouts.header");
@@ -16,7 +16,7 @@ $Route->add('/', function () {
     $Template->render("home");
 
 }, 'GET');
-$Route->add('/about', function () {
+$Route->add('/seed/about', function () {
     
     $Template = new Apps\Template;
     $Template->addheader("layouts.header");
@@ -26,7 +26,7 @@ $Route->add('/about', function () {
     $Template->render("pages.about");
 
 }, 'GET');
-$Route->add('/plan', function () {
+$Route->add('/seed/plan', function () {
     
     $Template = new Apps\Template;
     $Template->addheader("layouts.header");
@@ -36,7 +36,7 @@ $Route->add('/plan', function () {
     $Template->render("pages.plan");
 
 }, 'GET');
-$Route->add('/contact', function () {
+$Route->add('/seed/contact', function () {
     
     $Template = new Apps\Template;
     $Template->addheader("layouts.header");
@@ -46,7 +46,7 @@ $Route->add('/contact', function () {
     $Template->render("pages.contact");
 
 }, 'GET');
-$Route->add('/login', function () {
+$Route->add('/seed/login', function () {
     
     $Template = new Apps\Template;
     $Template->addheader("layouts.header");
@@ -56,7 +56,7 @@ $Route->add('/login', function () {
     $Template->render("pages.login");
 
 }, 'GET');
-$Route->add('/registration', function () {
+$Route->add('/seed/registration', function () {
     
     $Template = new Apps\Template;
     $Template->addheader("layouts.header");
@@ -66,11 +66,11 @@ $Route->add('/registration', function () {
     $Template->render("pages.registration");
 
 }, 'GET');
-$Route->add('/registration/{user}', function ($user) {
+$Route->add('/seed/registration/seed/{user}', function ($user) {
     
     $Template = new Apps\Template;
     $Core = new Apps\Core;
-    // $Core->debug((int)$Core->GetUserInfoUserName($user));
+    //seed/ $Core->debug((int)$Core->GetUserInfoUserName($user));
     $Template->addheader("layouts.header");
     $Template->addfooter("layouts.footer");
     $Template->assign("title","SignUp");
@@ -84,7 +84,7 @@ $Route->add('/registration/{user}', function ($user) {
     $Template->render("pages.registration");
 
 }, 'GET');
-$Route->add('/user-deposit', function () {
+$Route->add('/seed/user-deposit', function () {
     
     $Template = new Apps\Template;
     $Template->addheader("layouts.header");
@@ -94,7 +94,7 @@ $Route->add('/user-deposit', function () {
     $Template->render("dashboard.user-deposit");
 
 }, 'GET');
-$Route->add('/user-info', function () {
+$Route->add('/seed/user-info', function () {
     
     $Template = new Apps\Template(auth_url);
     $Core = new Apps\Core;
@@ -105,7 +105,7 @@ $Route->add('/user-info', function () {
     $Template->render("dashboard.user-info");
 
 }, 'GET');
-$Route->add('/user-invest', function () {
+$Route->add('/seed/user-invest', function () {
     
     $Template = new Apps\Template;
     $Template->addheader("layouts.header");
@@ -115,7 +115,7 @@ $Route->add('/user-invest', function () {
     $Template->render("dashboard.user-invest");
 
 }, 'GET');
-$Route->add('/user-notification', function () {
+$Route->add('/seed/user-notification', function () {
     
     $Template = new Apps\Template;
     $Template->addheader("layouts.header");
@@ -125,7 +125,7 @@ $Route->add('/user-notification', function () {
     $Template->render("dashboard.user-notification");
 
 }, 'GET');
-$Route->add('/user-panel', function () {
+$Route->add('/seed/user-panel', function () {
     
     $Template = new Apps\Template;
     $Template->addheader("layouts.header");
@@ -135,7 +135,7 @@ $Route->add('/user-panel', function () {
     $Template->render("dashboard.user-panel");
 
 }, 'GET');
-$Route->add('/user-transaction', function () {
+$Route->add('/seed/user-transaction', function () {
     
     $Template = new Apps\Template;
     $Template->addheader("layouts.header");
@@ -145,11 +145,11 @@ $Route->add('/user-transaction', function () {
     $Template->render("dashboard.user-transaction");
 
 }, 'GET');
-$Route->add('/user-withdraw', function () {
+$Route->add('/seed/user-withdraw', function () {
     
     $Template = new Apps\Template;
-    $Template->addheader("dashboard/layout.header");
-    $Template->addfooter("dashboard/layout.footer");
+    $Template->addheader("dashboard/seed/layout.header");
+    $Template->addfooter("dashboard/seed/layout.footer");
     $Template->assign("title"," SignUp");
 
     $Template->render("dashboard.user-withdraw");
@@ -159,9 +159,7 @@ $Route->add('/user-withdraw', function () {
 
 
 
-
-//Home page//
-
+//seed/Home page/seed//seed/
 
 
 
@@ -172,9 +170,10 @@ $Route->add('/user-withdraw', function () {
 
 
 
-//Logout Sessions//
+
+//seed/Logout Sessions/seed//seed/
 $Route->add(
-    '/auth/logout',
+    '/seed/auth/seed/logout',
     function () {
         $Template = new Apps\Template;
         $Template->expire();
@@ -183,8 +182,8 @@ $Route->add(
     },
     'GET'
 );
-//Logout Sessions//
+//seed/Logout Sessions/seed//seed/
 
 
 
-$Route->run('/');
+$Route->run('/seed/');

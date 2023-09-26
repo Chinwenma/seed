@@ -38,14 +38,14 @@ define("session_path","./_sessions/");
 define("session_timout",20);
 define("session_delete_timout",30);
 define("auth_session_key","logged_in");
-define("auth_url","/login");
+define("auth_url","/seed/login");
 
-define("domain", "https://seedinvestment.org/");    
+define("domain", "http://localhost/seed/");    
 
 define("db_host","localhost");
-define("db_user","seedinve_db");
-define("db_password","i9%4LFZ0H");
-define("db_name","seedinve_db");
+define("db_user","root");
+define("db_password","");
+define("db_name","seed");
 define("db_port",null);
 define("db_charset","utf8");
 define("db_socket",null);
